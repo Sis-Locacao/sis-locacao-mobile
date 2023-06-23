@@ -9,7 +9,7 @@ export const THEME = extendTheme({
     },
 
     white: "#ffffff",
-    steelBlue: "#34495E",
+    blue: "#34495E",
 
     gray:{
       700: "#B4BBBA",

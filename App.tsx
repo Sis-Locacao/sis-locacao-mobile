@@ -1,5 +1,5 @@
 import { StatusBar } from "react-native";
-import { NativeBaseProvider, View } from "native-base";
+import { NativeBaseProvider } from "native-base";
 import {
   useFonts,
   Inter_400Regular,
@@ -8,6 +8,7 @@ import {
 
 import { THEME } from "./src/theme";
 import { SignIn } from "./src/pages/SignIn";
+import { Loading } from "./src/components/Loading";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <View />}
+      {fontsLoaded ? <SignIn /> : <Loading />}
     </NativeBaseProvider>
   );
 }
