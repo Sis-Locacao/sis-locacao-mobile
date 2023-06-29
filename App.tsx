@@ -7,8 +7,9 @@ import {
 } from "@expo-google-fonts/inter";
 
 import { THEME } from "./src/theme";
-import { SignIn } from "./src/pages/SignIn";
 import { Loading } from "./src/components/Loading";
+
+import { Routes } from "./src/routes";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +24,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }

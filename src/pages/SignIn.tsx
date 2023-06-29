@@ -1,4 +1,5 @@
-import { Box, Center, ScrollView, Text, VStack } from "native-base";
+import { Box, ScrollView, Text, VStack } from "native-base";
+
 import { Input } from "../components/Input";
 import { Button } from "../components/Button";
 
