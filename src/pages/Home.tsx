@@ -1,9 +1,10 @@
 import { Text, VStack } from "native-base";
+import { HomeHeader } from "../components/HomeHeader";
 
 export function Home(){
     return(
         <VStack>
-            <Text>Home</Text>
+            <HomeHeader/>
         </VStack>
     )
 }
