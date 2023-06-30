@@ -7,7 +7,7 @@ export function HomeHeader() {
     <HStack py={12} bg="blue" px={8}>
       <VStack flex={1}>
         <Text color="white" mb={2} fontSize="md">
-          Bom dia
+          Bom dia 🌞
         </Text>
         <Heading color="green.500" fontSize="xl">
           Narcisio Dias
