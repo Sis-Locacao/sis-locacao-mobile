@@ -7,7 +7,6 @@ import { SignIn } from "../pages/SignIn";
   
   type AuthRoutes = {
     signIn: undefined;
-    home: undefined;
   };
   
   export type AuthNavigatorRouteProps = NativeStackNavigationProp<AuthRoutes>;

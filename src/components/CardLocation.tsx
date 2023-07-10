@@ -1,4 +1,4 @@
-import { TouchableOpacity } from "react-native";
+import { TouchableOpacity, TouchableOpacityProps } from "react-native";
 import { HStack, Text, VStack } from "native-base";
 import { UserPhoto } from "./UserPhoto";
 
@@ -13,13 +13,13 @@ type LocationProps = {
   };
 };
 
-type CardLocationProps = {
+type CardLocationProps = TouchableOpacityProps & {
   data: LocationProps;
 };
 
-export function CardLocation({ data }: CardLocationProps) {
+export function CardLocation({ data, ...rest }: CardLocationProps) {
   return (
-    <TouchableOpacity style={{ marginBottom: 14 }}>
+    <TouchableOpacity style={{ marginBottom: 15 }} {...rest}>
       <HStack
         px="19px"
         py="17px"
