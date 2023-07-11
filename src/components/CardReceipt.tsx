@@ -2,9 +2,13 @@ import { TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { HStack, Heading, Icon, Text, VStack } from "native-base";
 
-export function CardReceipt() {
+type CardReceiptProps = {
+  handleUpdateReceipt: () => void;
+};
+
+export function CardReceipt({ handleUpdateReceipt }: CardReceiptProps) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={handleUpdateReceipt}>
       <HStack alignItems="center" bg="gray.200" mb={3} px={3} py={4}>
         <Icon as={MaterialIcons} color="green.700" name="local-atm" size={8} />
         <VStack ml={4} flex={1}>
