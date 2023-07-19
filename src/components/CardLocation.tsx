@@ -40,10 +40,10 @@ export function CardLocation({ data, ...rest }: CardLocationProps) {
           <Text fontSize="md" mb={1} color="blue">
             {data.name}
           </Text>
-          <Text fontSize="xs" mb={2} color="gray.500" fontFamily="heading">
+          <Text fontSize="xs" mb={2} color="gray.500" fontFamily="body">
             {data.dataInicio} á {data.dataFim}
           </Text>
-          <Text fontSize="xs" color="gray.500" fontFamily="heading">
+          <Text fontSize="xs" color="green.700" fontFamily="body">
             {data.locacao.apelido}
           </Text>
         </VStack>
